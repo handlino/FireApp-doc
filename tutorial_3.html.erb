@@ -8,13 +8,13 @@
 
 <p>首先請將檔案 <code>screenshots.html</code> 的副檔名 <code>.html</code> 更改成對應 ERB 檔案的 <code>.html.erb</code> ，這樣之後才能在檔案中撰寫 ERB 語法。</p>
 
-<p>修改完檔名後，可在 <code><%= h '</body>' %></code> 的前一行插入生成 liveReload js 的 helper ：</p>
+<p>修改完檔名後，可在 <code><%= h '</body>' %></code> 的前一行插入生成 LiveReload js 的 helper ：</p>
 
 <pre class="prettyprint linenums lang-ruby">
 &lt;%= livereload_js %&gt;
 </pre>
 
-<p>加入後先切換至瀏覽器重新整理一次使 liveReload 生效，之後修改檔案存檔時瀏覽器便會自動重新整理頁面。 </p>
+<p>加入後先切換至瀏覽器重新整理一次使 LiveReload 生效，之後修改檔案存檔時瀏覽器便會自動重新整理頁面。 </p>
 
 <p>接下來要使用 ERB 語法簡化頁面中假文內容的部份，<br />
 請先找到內文區塊 <code><%= h '<div class="main">' %></code> 中重複 5 次的 HTML 假文內容：</p>
@@ -71,7 +71,7 @@
 &lt;/div&gt;
 </pre>
 
-<p>切換置瀏覽器確認頁面內容已經被更換成假文後即可進行下一階段的操作。</p>
+<p>切換至瀏覽器確認頁面內容已經被更換成假文後即可進行下一階段的操作。</p>
 
 <div class="page-footer">
     Next: <a href="tutorial_4.html">Layout 的基本用法 <i class="lsf-icon arrow"></i></a>
