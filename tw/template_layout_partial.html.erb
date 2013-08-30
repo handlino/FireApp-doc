@@ -24,11 +24,11 @@
 <pre class="prettyprint linenums lang-html">
 &lt;h1&gt;sample list&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;list 1&lt;/li&gt;
-  &lt;li&gt;list 2&lt;/li&gt;
-  &lt;li&gt;list 3&lt;/li&gt;
-  &lt;li&gt;list 4&lt;/li&gt;
-  &lt;li&gt;list 5&lt;/li&gt;
+    &lt;li&gt;list 1&lt;/li&gt;
+    &lt;li&gt;list 2&lt;/li&gt;
+    &lt;li&gt;list 3&lt;/li&gt;
+    &lt;li&gt;list 4&lt;/li&gt;
+    &lt;li&gt;list 5&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
 
@@ -37,9 +37,9 @@
 <pre class="prettyprint linenums lang-html">
 &lt;h1&gt;sample list&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;% (1..5).each do |n| %&gt;
-  &lt;li&gt;list &lt;%= n %&gt;&lt;/li&gt;
-  &lt;% end %&gt;
+    &lt;% (1..5).each do |n| %&gt;
+        &lt;li&gt;list &lt;%= n %&gt;&lt;/li&gt;
+    &lt;% end %&gt;
 &lt;/ul&gt;
 </pre>
 
@@ -125,7 +125,7 @@ special_layouts/_special_layout.html.erb
 
 <pre class="prettyprint linenums lang-html">
 &lt;% if content_for? :ad %&gt;
-  &lt;%= yield :ad %&gt;
+    &lt;%= yield :ad %&gt;
 &lt;% end %&gt;
 </pre>
 
@@ -133,7 +133,7 @@ special_layouts/_special_layout.html.erb
 
 <pre class="prettyprint linenums lang-html">
 &lt;% content_for :ad do %&gt;
-  doc 資料夾內共用的廣告內容
+    doc 資料夾內共用的廣告內容
 &lt;% end %&gt;
 
 &lt;%= render :template => "/_layout" %&gt;
@@ -151,9 +151,9 @@ special_layouts/_special_layout.html.erb
 
 <pre class="prettyprint linenums lang-html">
 &lt;ul id="main_menu"&gt;
-  &lt;li class="about"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="products"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="contact"&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;   
+    &lt;li class="about"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="products"&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="contact"&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;   
 &lt;/ul&gt;
 </pre>
 
@@ -170,7 +170,7 @@ special_layouts/_special_layout.html.erb
 &lt;body&gt;
     &lt;div class="container"&gt;
         &lt;div class="header"&gt;
-          &lt;%= render :partial =&gt; "main_menu" %&gt;
+            &lt;%= render :partial =&gt; "main_menu" %&gt;
         &lt;/div&gt;
         &lt;%= yield %&gt;
         &lt;div class="footer"&gt;&lt;/div&gt;

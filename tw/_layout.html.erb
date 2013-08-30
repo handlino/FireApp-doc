@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Fire.app documents</title>
-  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="http://fonts.googleapis.com/css?family=Anton|Bree+Serif|Vollkorn|Exo:300,600,900" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         <a href="index.html">
-            <img src="images/logo.png" alt="Fire.app logo" width="220" height="220" />
+            <img src="../images/logo.png" alt="Fire.app logo" width="220" height="220" />
         </a>
         <h1>
             <a href="index.html">
@@ -20,13 +20,13 @@
         </h1>
     </div>
     <ul class="lang">
-        <li><a href="index.html" class="active">English</a></li>
-        <li><a href="tw/index.html">正體中文</a></li>
+        <li><a href="../index.html">English</a></li>
+        <li><a href="index.html" class="active">正體中文</a></li>
     </ul>
     <ul class="menu">
-        <li><a href="index.html">Why Fire.app？</a></li>
-        <li><a href="getting_started.html">Getting Started</a></li>
-        <!--li>
+        <li><a href="index.html">為什麼要使用 Fire.app？</a></li>
+        <li><a href="getting_started.html">快速入門指南</a></li>
+        <li>
             Fire.app 機能應用教學
             <ul>
               <li><a href="tutorial_1.html">觀看範例及準備實作</a></li>
@@ -51,8 +51,8 @@
                 <li><a href="template_helper.html">Template Helper</a></li>
                 
             </ul>
-        </li--> 
-        <li><a href="https://github.com/handlino/FireApp">GitHub</a></li>
+        </li> 
+        <li><a href="https://github.com/handlino/FireApp">GitHub 頁面</a></li>
     </ul>
 </div>
 <div class="main-wrapper">
@@ -60,9 +60,9 @@
         <%= yield %>
     </div>
 </div>
-<script type="text/javascript" src="javascripts/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="javascripts/prettify.js"></script>
-<script type="text/javascript" src="javascripts/lang-css.js"></script>
+<script type="text/javascript" src="../javascripts/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="../javascripts/prettify.js"></script>
+<script type="text/javascript" src="../javascripts/lang-css.js"></script>
 <script>
 $(function(){
     prettyPrint();

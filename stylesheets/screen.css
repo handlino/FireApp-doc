@@ -547,6 +547,29 @@ ol.qa .lsf-icon {
   color: #D15700;
 }
 
+ul.lang {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+ul.lang li {
+  float: left;
+  padding: 4px 0;
+}
+ul.lang li a {
+  border-radius: 12px;
+  background: #fff;
+  padding: 2px 10px;
+  margin-right: 10px;
+  border: #ddd 1px solid;
+}
+ul.lang li a.active {
+  background: #6e9c1f;
+  color: #fff;
+  border-color: #6e9c1f;
+}
+
 ul.nav-tabs {
   list-style: none;
   padding-left: 0;

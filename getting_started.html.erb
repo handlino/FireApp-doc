@@ -1,7 +1,7 @@
-<h1>快速入門指南</h1>
-<h2>下載與開啟</h2>
-<p>購買 Fire.app 後，附有下載連結的 email 將會寄至購買時填寫的信箱。所有 1.x 版的更新下載連結亦會透過 email 提供。</p>
-<p>請透過連結下載符合自己作業系統的 Fire.app 檔案，並將檔案解壓縮。可參考下列對應於所使用作業系統之說明：</p>
+<h1>Getting Started</h1>
+<h2>Download and Start Fire.app</h2>
+<p>After buying Fire.app, we will send you an email with download links to your registered PayPal email address. You will also get 1.x updates for free.</p>
+<p>Please download the file which is appropriate to your OS and unzip it. Next, proceed to the section below for your OS.</p>
 
 <div class="switch-block">
   <ul class="nav-tabs">
@@ -12,52 +12,53 @@
   <div class="content-wrapper">
     <div class="content windows">
       <h3>Windows</h3>
-      <p>解壓縮檔案後會得到一個包含 Fire.app 所需檔案之資料夾，可將此資料夾搬移至想放置的位置，執行 Fire-app.exe 即可啟動 Fire.app 並看見灰色的小 icon 出現在右下角的工作列中。</p>
+      <p>You will get a folder containing all the Fire.app files. You can put this folder anywhere you want. Run Fire-app.exe and you'll see a little gray icon appear in the Windows notification area.</p>
       <img src="images/windows.jpg" />
     </div>
     <div class="content osx">
       <h3>Mac OS</h3>
-      <p>解壓縮檔案後會得到一個檔名為 Fire.app 的檔案，可搬移至想放置的位置。執行此 app 便可看見灰色的小 icon 出現在 menu bar 。</p>
+      <p>You will get a file named Fire.app. You can put it anywhere you want. Start the app and you'll see a little gray icon appear in the menubar.</p>
       <img src="images/osx.jpg" />
     </div>
     <div class="content linux">
       <h3>Linux</h3>
-      <p>解壓縮後會得到一個包含 Fire.app 所需檔案之資料夾，可將此資料夾搬移至想放置的位置，執行 run.sh 即可啟動 Fire.app 並看見灰色的小 icon 出現在 menu bar 。</p>
+      <p>You will get a folder containing all the Fire.app files. You can put this folder anywhere you want. Execute run.sh and you'll see a little gray icon appear in the menubar.</p>
       <img src="images/linux.jpg" />
     </div>
   </div>
 </div>
 
-<p class="sp-point">註: 因 Fire.app 以 Java 撰寫，啟動時可能花費數秒，請耐心等待。</p>
+<p class="sp-point">NOTE: Fire.app is written in Java, so it will take a few seconds to start.</p>
 
-<h2>建立專案</h2>
-<p>要使用 Fire.app 建立專案時，只需點選 Fire.app icon，再從 "Create Project" 選單中選取自己想建立的專案類型，輸入專案資料夾名稱後點擊儲存即可建立新專案。<br />
-若沒有特別想使用的 framework，建議選擇 "compass" -> "project" 即可建立一個已包含 sass 檔案的專案，預設即載入 <a href="http://compass-style.org/reference/compass/reset/">compass reset</a> 。 <br /> 
-（註： "Create Project" 選單中的 "Fireapp Example" 一項並非可使用的 framwork，而是直接建立一個 Fire.app 範例專案在指定的資料夾中，供使用者參考此範例中各種 Fire.app 的應用方法。）</p>
+<h2>Creating Projects</h2>
+<p>To create a project, click the Fire.app icon and choose "Create Project" then choose the project type you want from any of the frameworks on the list.<br />
+If you don't prefer any of the frameworks, we suggest to choose "compass" -> "project". It will create a compass project which contains sass files and import <a href="http://compass-style.org/reference/compass/reset/">compass reset</a> by default.</p>
 
-<p>輸入專案名稱並點擊儲存後，畫面上將出現一個對話框顯示專案已成功建立。</p>
+<p>Note: "Fireapp Example" on the "Create Project" list is not a framework but a Fire.app project example. You can read some source code inside this project to learn how to use Fire.app.</p>
+
+<p>Give your new project a name and save it. A dialog window will appear saying your project has been created.</p>
 <img src="images/create-project-report.png" />
 
-<p>當專案被 Watch 時 Fire.app 的 icon 會由灰色轉為彩色，此時除了可以使用 Fire.app 所提供的 Web Server 在瀏覽器中看到目前專案的呈現畫面外，當 Sass 、 CoffeeScript 檔案被變更時，Fire.app 便會自動產生出相應的 CSS 和 JavaScript 檔案。</p>
+<p>Also, the icon turns orange, which means Fire.app is "watching" your project. If your project is being watched, after you change a Sass/CoffeeScript file it automatically compiles into a corresponding CSS/JavaScript file. Also, you can use Fire.app's built-in web server to see the project result in your browser.</p>
 
-<p>以建立 compass 專案為例，建立專案後之資料夾內容如下：</p>
+<p>Let's build a compass project as an example. The project folder should look like this:</p>
 <img src="images/project-folder.png" />
 <pre class="prettyprint">
 awesome-website/
-  sass/          // Sass 檔案夾
+  sass/          // Sass folder.
     screen.scss
     ...
-  stylesheets/   // 預設的 CSS 輸出資料夾
+  stylesheets/   // Default CSS output folder.
     ...
-  .sass-cache/   // 隱藏的 sass cache 資料夾，請勿變更
-  config.rb      // Compass 設定檔，請勿刪除
+  .sass-cache/   // The hidden sass cache folder. Do not touch it.
+  config.rb      // Compass setting. Do not remove it.
 </pre>
 
-<h2>寫入專案內容及預覽</h2>
-<p>在專案資料夾中新增一個 index.html ，寫入一些內容如 <code>Hello World!</code> 後在瀏覽器中打開 <code>http://127.0.0.1:24681/index.html</code> 便能看見剛剛新增的頁面在瀏覽器中呈現的樣子。</p>
+<h2>Editing and Preview</h2>
+<p>Add a file to the project folder and name it <code>index.html</code>. Then write some content like <code>Hello World!</code>. Save the file and open <code>http://127.0.0.1:24681/index.html</code> in your browser. You will see the result of your code.</p>
 <img src="images/helloworld_01.png" />
 
-<p>補上 html 的其他部分以便載入由 Sass 檔生成的 CSS 檔案。範例如下：</p>
+<p>Next, add more HTML to import a CSS file which is generated from a Sass file. For example, here is what it looks like: </p>
 
 <pre class="prettyprint linenums lang-html">
 <%= h '<!DOCTYPE html>
@@ -74,7 +75,7 @@ awesome-website/
 %>
 </pre>
 
-<p>並在相對應的 <code>/sass/screen.scss</code> 中寫入測試用的 CSS，例如：</p>   
+<p>Write some CSS in the corresponding Sass file <code>/sass/screen.scss</code> for a test. For example: </p>   
 
 <pre class="prettyprint linenums lang-css">
 h1 {
@@ -82,13 +83,13 @@ h1 {
 }
 </pre>
 
-<p>因為 CSS 相容於 SCSS 語法，此處寫一般的 CSS 即可。切換至瀏覽器並重新整理便可看見呈現結果：</p>
+<p>Because SCSS is a superset of CSS syntax, we can just write normal CSS here. Switch to the browser and refresh the page, then you'll see the result.</p>
 <img src="images/helloworld_02.png" />
 
-<h2>使用樣板語言</h2>   
+<h2>Using Template Languages</h2>   
 
-<p>透過 Fire.app ，只需使用對應的副檔名即可撰寫樣板語言。例如將前面撰寫的 <code>index.html</code> 更名為 <code>index.html.erb</code> 即可插入 ERB 樣板語言的語法，以便使用樣板語言的功能。</p>
-<p>更改副檔名後可以試著在 <code>h1</code> 下面加上生成假文段落用的 Helper <code>&lt;%= lorem_paragraph %&gt;</code>：</p>
+<p>Using template languages with Fire.app is very easy, simply name the file with a corresponding file extension. For example, rename your <code>index.html</code> to <code>index.html.erb</code> then you can use the ERB template language. </p>
+<p>After renaming the file, you can add a lorem ipsum helper <code>&lt;%= lorem_paragraph %&gt;</code> after <code>h1</code> to generate a paragraph. Here's what it looks like:</p>
 
 <pre class="prettyprint linenums lang-html">
 <%= h '<!DOCTYPE html>
@@ -107,20 +108,21 @@ h1 {
 %>
 </pre>
 
-<p>加入後切換至瀏覽器重新整理，便可看見假文已經出現在畫面中：</p>
+<p>Save the file and refresh the browser. Now you will see the lorem peragraph.</p>
 
 <img src="images/helloworld_03.png" />
 
-<p>關於樣板語言和 Fire.app 支援的 Helper 可參考說明文件：</p>
+<p>If you want to learn more about template languages or Fire.app's built-in helpers, please follow these links below.
+</p>
 
 <ul>
   <li><a href="template_layout_partial.html">Templates, Layouts &amp; Partials</a></li>
   <li><a href="template_helper.html">Template Helpers</a></li>
 </ul>
 
-<h2>生成靜態檔案</h2>
+<h2>Generating Static Files</h2>
 
-<p>完成網站後，可使用 Build Project 功能生成網站的靜態檔。點擊 Fire.app icon 並選擇 "Build Project"，便可看見專案資料夾中出現了一個以 <code>build_</code> 開頭加上時間戳記為名稱的資料夾，裡面即會包含此專案生成的所有靜態檔案。</p>
+<p>After completing your project, you can use "Build Project" to generate the static files. Click the Fire.app icon and choose "Build Project". You will get a folder named <code>build_##############</code> which contains all the static files generated from your project. </p>
 
 <img src="images/helloworld_04.png" />
 

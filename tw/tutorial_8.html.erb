@@ -41,20 +41,20 @@ end
 
 <pre class="prettyprint linenums lang-html">
 &lt;div class="main-menu"&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;%= new_link_to('&lt;span class="icons-home"&gt;Home&lt;/span&gt;',"/index.html") %&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;%= new_link_to('&lt;span class="icons-features"&gt;Features&lt;/span&gt;',"/features/index.html") %&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;%= new_link_to('&lt;span class="icons-documents"&gt;Documents&lt;/span&gt;',"/documents.html") %&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;%= new_link_to('&lt;span class="icons-screenshots"&gt;Screenshots&lt;/span&gt;',"/screenshots.html") %&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;%= new_link_to('&lt;span class="icons-home"&gt;Home&lt;/span&gt;',"/index.html") %&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;%= new_link_to('&lt;span class="icons-features"&gt;Features&lt;/span&gt;',"/features/index.html") %&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;%= new_link_to('&lt;span class="icons-documents"&gt;Documents&lt;/span&gt;',"/documents.html") %&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;%= new_link_to('&lt;span class="icons-screenshots"&gt;Screenshots&lt;/span&gt;',"/screenshots.html") %&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
 
@@ -68,28 +68,28 @@ end
 
 <pre class="prettyprint linenums lang-html">
 &lt;div class="main-menu"&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      &lt;a href="/index.html" &lt;%= 'class="active"' if request.path == "/index.html" || request.path == "/" %&gt;&gt;
-        &lt;span class="icons-home"&gt;Home&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/features/index.html" &lt;%= 'class="active"' if request.path =~ /^\/features\// %&gt;&gt;
-        &lt;span class="icons-features"&gt;Features&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/documents.html" &lt;%= 'class="active"' if request.path == "/documents.html" %&gt;&gt;
-        &lt;span class="icons-documents"&gt;Documents&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="/screenshots.html" &lt;%= 'class="active"' if request.path == "/screenshots.html" %&gt;&gt;
-        &lt;span class="icons-screenshots"&gt;Screenshots&lt;/span&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;a href="/index.html" &lt;%= 'class="active"' if request.path == "/index.html" || request.path == "/" %&gt;&gt;
+                &lt;span class="icons-home"&gt;Home&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="/features/index.html" &lt;%= 'class="active"' if request.path =~ /^\/features\// %&gt;&gt;
+                &lt;span class="icons-features"&gt;Features&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="/documents.html" &lt;%= 'class="active"' if request.path == "/documents.html" %&gt;&gt;
+                &lt;span class="icons-documents"&gt;Documents&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="/screenshots.html" &lt;%= 'class="active"' if request.path == "/screenshots.html" %&gt;&gt;
+                &lt;span class="icons-screenshots"&gt;Screenshots&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
 

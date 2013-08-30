@@ -3,7 +3,7 @@
 
 <p>由前面看過的完成頁面中可以看見各個頁面內容有許多相同的部份：</p>
 
-<img src="images/structure_02.png" />
+<img src="../images/structure_02.png" />
 
 <p>如上圖所顯示，各個頁面中的 Header 、 Footer 及主選單都是相同的，且除了首頁之外，所有頁面也有相同的側欄部分。<br/>
 僅使用 HTML 來完成整個網站原型時，無可避免的在每個頁面檔案中都會包含相同部分的程式碼，若要修改這些共通的部份便需要變更多個檔案，相當不便。 Layout 便是用來解決這種狀況，它能把網站中各頁面相同的部份集合在一個檔案中供各個頁面套用，詳細的使用說明請參考： <a href="template_layout_partial.html">Templates, Layouts &amp; Partials</a>。</p>
@@ -19,9 +19,9 @@
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;title&gt;Fire.app Demo&lt;/title&gt;
-  &lt;link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" /&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Fire.app Demo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" /&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div class="header-wrapper"&gt;
@@ -77,7 +77,7 @@
 </pre>
 
 <p>上述步驟的示意圖如下：</p>
-<img src="images/layout.png" />
+<img src="../images/layout.png" />
 
 <p>以上便完成了抽出 Layout 部分的操作，可切換至瀏覽器觀察頁面。<br/>
 由於教材檔案中已經準備好其他頁面的內容，因此現在點擊主選單的連結亦可看見其他頁面。也可以在編輯器中開啟其他頁面的檔案，便能發現各頁面的內容部分都和 Screenshots 頁面一樣只是利用 ERB 和 Helper 產生出來的假文。</p>
