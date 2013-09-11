@@ -3,7 +3,7 @@
 
 <p>在範例網站中可以看到 Features 列表頁和內容頁的主選單下方都有一個宣傳文字區塊，為了讓 <code>features</code> 資料夾內的頁面都能擁有這個宣傳區塊，我們必須使用提供另一個 layout 給 <code>features</code> 資料夾內的頁面使用。但是如果要將共通 Layout 的內容複製一次的話便又增加了重複的程式碼量，因此我們可以改用指定 render template 搭配 content_for 的方式解決。</p>
 
-<p>首先更改全站共用的 Layout 檔案 <code>_layout.html.erb</code> ，在 <code>&lt;%= render :partial =&gt; "main_menu" %&gt;</code> 下方加上要插入宣傳文字的 <code>content_for</code> 區塊：</p>
+<p>首先更改全站共用的 Layout 檔案 <code>/_layout.html.erb</code> ，在 <code>&lt;%= render :partial =&gt; "main_menu" %&gt;</code> 下方加上要插入宣傳文字的 <code>content_for</code> 區塊：</p>
 
 <pre class="prettyprint linenums lang-html">
 &lt;% if content_for? :feature_slogan %&gt;
