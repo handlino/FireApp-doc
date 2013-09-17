@@ -417,6 +417,15 @@ table {
   font-feature-settings: "liga" 1, "dlig" 1;
 }
 
+* html {
+  font-size: 93.75%;
+}
+
+html {
+  font-size: 15px;
+  line-height: 1.73333em;
+}
+
 body {
   background: whitesmoke url("../images/bg.png");
   position: relative;
@@ -438,8 +447,7 @@ body > .nav {
 body > .main-wrapper {
   display: block;
   margin-left: 330px;
-  padding-top: 8px;
-  padding-bottom: 40px;
+  padding-bottom: 52px;
 }
 body > .main-wrapper .main {
   max-width: 50em;
@@ -447,6 +455,42 @@ body > .main-wrapper .main {
   display: block;
   margin: 0 auto;
   overflow: hidden;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.73333em;
+  margin-top: 0.86667em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.86667em;
+}
+
+h2 {
+  font-size: 1.46667em;
+  line-height: 1.18182em;
+  margin-top: 1.18182em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.18182em;
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.44444em;
+  margin-top: 1.44444em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.44444em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.73333em;
+  margin-top: 1.73333em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.73333em;
 }
 
 a {
@@ -467,6 +511,7 @@ i {
 
 img {
   max-width: 100%;
+  margin: 13px 0;
 }
 
 code {
@@ -481,6 +526,14 @@ code {
 
 .lsf-icon.arrow:before {
   content: '\E00d';
+}
+
+.lsf-icon.down:before {
+  content: '\E03e';
+}
+
+.lsf-icon.up:before {
+  content: '\E135';
 }
 
 .point {
@@ -530,17 +583,22 @@ ul.menu li {
 }
 ul.menu ul {
   margin: 10px 0;
+  padding-left: 30px;
 }
 ul.menu ul > li {
   line-height: 1.5em;
   margin-bottom: 5px;
+  margin-left: 0;
+}
+
+a.collapse-menu {
+  display: none;
 }
 
 ol.qa li {
   margin-bottom: 26px;
 }
 ol.qa .point {
-  margin-top: 6px;
   display: block;
 }
 ol.qa .lsf-icon {
@@ -697,4 +755,121 @@ ol.linenums {
 ol.linenums li {
   line-height: 18px;
   padding-left: 12px;
+}
+
+pre.prettyprint {
+  font-size: 1em;
+  line-height: 1.38667em;
+  margin-top: 0.86667em;
+  padding-top: 0.86667em;
+  padding-bottom: 0.86667em;
+  margin-bottom: 0.86667em;
+}
+pre.prettyprint li {
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  body > .nav {
+    position: static;
+    width: 92%;
+    margin: 26px auto;
+    padding: 5px;
+  }
+  body > .nav ul.menu {
+    display: none;
+    padding: 0 13px;
+  }
+  body > .nav a.collapse-menu {
+    display: block;
+    margin: 13px;
+    text-align: center;
+    background-color: #2C2C2C;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+    background-image: -webkit-linear-gradient(center top, #333333, #222222);
+    background-image: -moz-linear-gradient(center top, #333333, #222222);
+    background-image: -o-linear-gradient(center top, #333333, #222222);
+    background-image: linear-gradient(center top, #333333, #222222);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+  }
+  body > .nav a.collapse-menu .lsf-icon {
+    font-size: 0.7em;
+    margin-left: 8px;
+  }
+
+  body > .main-wrapper {
+    margin-left: 0;
+  }
+  body > .main-wrapper .main {
+    width: 92%;
+  }
+
+  div.logo {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    position: relative;
+  }
+  div.logo img {
+    margin: 0;
+    width: 150px;
+    height: 150px;
+  }
+  div.logo h1 {
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    left: 160px;
+  }
+  div.logo h1 a .title {
+    font-size: 114px;
+    line-height: 1em;
+  }
+  div.logo h1 a .small {
+    font-size: 20px;
+  }
+  div.logo h1 a .documents {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    font-size: 30px;
+    line-height: 1em;
+  }
+
+  ul.lang {
+    width: 175px;
+    display: block;
+    margin: 13px auto;
+    position: relative;
+    left: 10px;
+  }
+}
+@media (max-width: 519px) {
+  div.logo {
+    width: 200px;
+  }
+  div.logo img {
+    width: 75px;
+    height: 75px;
+  }
+  div.logo h1 {
+    left: 80px;
+  }
+  div.logo h1 a .title {
+    font-size: 57px;
+    line-height: 1em;
+  }
+  div.logo h1 a .small {
+    font-size: 10px;
+  }
+  div.logo h1 a .documents {
+    font-size: 15px;
+    line-height: 1em;
+  }
 }

@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Fire.app documents</title>
-  <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="http://fonts.googleapis.com/css?family=Anton|Bree+Serif|Vollkorn|Exo:300,600,900" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Handlino Inc." />
+    <meta property="og:title" content="Fire.app" />
+    <meta property="og:url" content="http://fireapp.handlino.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Dead Easy HTML Prototyping" />
+    <meta property="og:image" content="http://fireapp.handlino.com/images/link-thumbnail.png" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Fire.app documents</title>
+    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Anton|Bree+Serif|Vollkorn|Exo:300,600,900" rel="stylesheet" type="text/css">
+    <!-- html5shiv http://code.google.com/p/html5shiv/ -->
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
+
 <body>
 <div class="nav">
     <div class="logo">
@@ -23,6 +34,7 @@
         <li><a href="index.html" class="active">English</a></li>
         <li><a href="tw/index.html">正體中文</a></li>
     </ul>
+    <a href="#" class="collapse-menu">Menu <i class="lsf-icon down"></i></a>
     <ul class="menu">
         <li><a href="index.html">Why Fire.app？</a></li>
         <li><a href="getting_started.html">Getting Started</a></li>
@@ -44,8 +56,8 @@
             Documents
             <ul>
                 <li><a href="preference.html">Preference</a></li>
-                <!--li><a href="options.html">Options 設定</a></li>
-                <li><a href="coffeescript.html">使用 CoffeeScript</a></li-->
+                <!--li><a href="options.html">Options</a></li>
+                <li><a href="coffeescript.html">Using CoffeeScript</a></li-->
                 <li><a href="extension.html">Using Extensions</a></li>
                 <li><a href="template_layout_partial.html">Templates, Layouts &amp; Partials</a></li>
                 <li><a href="template_helper.html">Template Helper</a></li>
@@ -54,6 +66,7 @@
         <li><a href="https://github.com/handlino/FireApp">GitHub</a></li>
     </ul>
 </div>
+
 <div class="main-wrapper">
     <div class="main">
         <%= yield %>
@@ -62,11 +75,7 @@
 <script type="text/javascript" src="javascripts/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="javascripts/prettify.js"></script>
 <script type="text/javascript" src="javascripts/lang-css.js"></script>
-<script>
-$(function(){
-    prettyPrint();
-});
-</script>
+<script type="text/javascript" src="javascripts/app.js"></script>
 <% if content_for? :js %>
   <%= yield :js %>
 <% end %>
