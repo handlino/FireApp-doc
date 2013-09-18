@@ -546,11 +546,13 @@ code {
 }
 
 div.logo img {
-  margin: 0 auto;
+  margin: -10px auto 0;
   display: block;
+  height: 180px;
+  width: 180px;
 }
 div.logo h1 {
-  margin: 10px 0 36px;
+  margin: 10px 0 18px;
   text-align: center;
   line-height: 1em;
 }
@@ -564,12 +566,77 @@ div.logo h1 a .title {
 }
 div.logo h1 a .small {
   color: #616161;
-  font-size: 0.4em;
+  font-size: 18px;
 }
 div.logo h1 a .documents {
+  display: block;
   color: #616161;
   font-size: 24px;
   font-weight: normal;
+  line-height: 26px;
+}
+
+.buy {
+  margin-bottom: 26px;
+}
+.buy .button {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #83c314), color-stop(100%, #689022));
+  background-image: -webkit-linear-gradient(#83c314, #689022);
+  background-image: -moz-linear-gradient(#83c314, #689022);
+  background-image: -o-linear-gradient(#83c314, #689022);
+  background-image: linear-gradient(#83c314, #689022);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#83c314, endColorstr=#689022);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px, rgba(255, 255, 255, 0.4) 0 1px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px, rgba(255, 255, 255, 0.4) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px, rgba(255, 255, 255, 0.4) 0 1px 0 inset;
+  text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+  border: 1px solid #547718;
+  display: inline-block;
+  margin: 1px auto 8px;
+  padding: 0 20px;
+  width: 158px;
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  color: #fff;
+}
+.buy .button span {
+  display: inline-block;
+  display: inline;
+  float: left;
+  border-right: 1px solid #5b8118;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) -1px 0 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) -1px 0 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) -1px 0 0 inset;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+.buy .button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #699221), color-stop(100%, #4d7409));
+  background-image: -webkit-linear-gradient(#699221, #4d7409);
+  background-image: -moz-linear-gradient(#699221, #4d7409);
+  background-image: -o-linear-gradient(#699221, #4d7409);
+  background-image: linear-gradient(#699221, #4d7409);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#699221, endColorstr=#4d7409);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 2px 0, rgba(255, 255, 255, 0.2) 0 1px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 2px 0, rgba(255, 255, 255, 0.2) 0 1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 2px 0, rgba(255, 255, 255, 0.2) 0 1px 0 inset;
+}
+.buy .donated {
+  text-align: center;
+  margin: 0;
+  font-family: 'Vollkorn', serif;
+  font-size: 11px;
+  color: #555;
+  line-height: 15px;
 }
 
 ul.menu {
@@ -769,7 +836,7 @@ pre.prettyprint li {
   padding-left: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body > .nav {
     position: static;
     width: 92%;
@@ -810,7 +877,7 @@ pre.prettyprint li {
   }
 
   div.logo {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     display: block;
     width: 400px;
     position: relative;
