@@ -101,7 +101,7 @@
 &lt;/html&gt;
 </pre>
 
-<p>There are two <!-- three --> ways to use layouts as shown here:</p>
+<p>There are three ways to use layouts as shown here:</p>
 
 <ol>
 <li>Adding layout file to the folder</li>
@@ -123,9 +123,9 @@ special_layouts/_special_layout.html.erb
 
 <p>Now <code>contact.html.erb</code> will use <code>/special_layouts/_special_layout.html.erb</code> as its layout.</p>
 
-<!--h3>Specifying render template</h3>
+<h3>Specifying render template</h3>
 
-<p>This method usually use with <code>content_for</code>. For example, if we write this segment in our common layout <code>/_layout.html.erb</code>:</p>
+<p>This method is usually used with <code>content_for</code>. For example, if we write this segment in our common layout <code>/_layout.html.erb</code>:</p>
 
 <pre class="prettyprint linenums lang-html">
 &lt;% if content_for? :ad %&gt;
@@ -134,7 +134,7 @@ special_layouts/_special_layout.html.erb
 </pre>
 
 <p>The code above will display the content of the identifier <code>:ad</code>. <br />
-   But if we need to use the same <code>:ad</code> content in all of the pages in the folder <code>/doc</code> with the common layout, we can add a new layout file <code>_layout.html.erb</code> in <code>/doc</code> folder with this content: </p>
+   But, if we need to use the same <code>:ad</code> content in all of the pages in the folder <code>/doc</code> with the common layout, we can add a new layout file <code>_layout.html.erb</code> in the <code>/doc</code> folder with this content: </p>
 
 <pre class="prettyprint linenums lang-html">
 &lt;% content_for :ad do %&gt;
@@ -144,7 +144,7 @@ special_layouts/_special_layout.html.erb
 &lt;%= render :template => "/_layout" %&gt;
 </pre>
 
-<p>With the code above, we can add common content with <code>content_for</code> and still use the common layout. To know more about <code>content_for</code>, please check <a href="template_helper.html">Template Helpers</a>.</p-->
+<p>With the code above, we can add common content with <code>content_for</code> and still use the common layout. For more about <code>content_for</code>, please check <a href="template_helper.html">Template Helpers</a>.</p>
 
 <h2>Partials</h2>
 

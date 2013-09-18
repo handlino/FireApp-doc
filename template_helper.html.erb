@@ -10,7 +10,7 @@
 &lt;%= livereload_js %&gt;
 </pre>
 
-<p>Only insert LiveReload-js in the develope files but not in the output static files:</p>
+<p>Only insert LiveReload-js in the develope files, not in the output static files:</p>
 
 <pre class="prettyprint linenums lang-html">
 &lt;%= livereload_js if ENV["RACK_ENV"] != "production" %&gt;
